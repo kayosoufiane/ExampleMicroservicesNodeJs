@@ -18,8 +18,8 @@ services:
       - "4001:80"
     environment:
       - PORT=80
-      - STORAGE_ACCOUNT_NAME=${{ secrets.STORAGE_ACCOUNT_NAME }}
-      - STORAGE_ACCESS_KEY=${{ secrets.STORAGE_ACCESS_KEY }}
+      - STORAGE_ACCOUNT_NAME=${STORAGE_ACCOUNT_NAME}
+      - STORAGE_ACCESS_KEY=${STORAGE_ACCESS_KEY}
     restart: "no"
 
   video-streaming:
